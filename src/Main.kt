@@ -11,7 +11,7 @@ fun decimalToBinary(decimal: Int): String { // Начало функции decim
     var number = decimal // Создание копии введенного числа для работы
     val binary = StringBuilder() // Создание пустой строки StringBuilder для построения двоичного представления
 
-    while (number > 0) { // Цикл, который работает, пока число больше нуля
+    while (number > 0) { // Цикл работает пока число больше нуля
         val remainder = number % 2 // Вычисление остатка от деления на 2 (0 или 1)
         binary.insert(0, remainder) // Вставка остатка в начало строки StringBuilder
         number /= 2 // Деление числа на 2 (целочисленное деление)
